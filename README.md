@@ -43,11 +43,11 @@ A modern, scalable multivendor e-commerce platform built using a Microservice Ar
 
 ## <a name="feature">🔋 Feature</a>
 
-👉 🏬 Multivendor support with dedicated vendor dashboards
-👉 🤖 Personalized product recommendations powered by ML
-👉 📊 Real-time user activity tracking with Kafka
-👉 ⚙️ Scalable and maintainable microservices
-👉 🚀 Fast, SEO-friendly frontend with Next.js
+👉 🏬 Multivendor support with dedicated vendor dashboards <br/>
+👉 🤖 Personalized product recommendations powered by ML <br/>
+👉 📊 Real-time user activity tracking with Kafka <br/>
+👉 ⚙️ Scalable and maintainable microservices <br/>
+👉 🚀 Fast, SEO-friendly frontend with Next.js <br/>
 👉 🔒 Secure and efficient data management with PostgreSQL and Redis
 
 ## <a name="quick-start">🤸 Quick Start</a>
