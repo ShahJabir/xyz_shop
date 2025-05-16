@@ -1,82 +1,135 @@
-# 
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+<h1 align="center">XYZ Shop</h1>
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+<div align="center">
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/node?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+⚡️ [![GitHub](https://img.shields.io/github/license/ShahJabir/xyz_shop?color=black)](https://github.com/ShahJabir/xyz_shop/blob/main/LICENSE)
+![GitHub stars](https://img.shields.io/github/stars/ShahJabir/xyz_shop)
+![GitHub forks](https://img.shields.io/github/forks/ShahJabir/xyz_shop)
 
-## Finish your CI setup
+</div>
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/Tuzd6lakOT)
+## 📋 <a name="table">Table of Contents</a>
 
+🤖 [Introduction](#introduction)
+⚙️ [Tech Stack](#tech-stack)
+🔋 [Feature](#feature)
+🤸 [Quick Start](#quick-start)
+🚀 [Author](#authors)
+📄 [License](#license)
 
-## Run tasks
+## <a name="introduction">🤖 Introduction</a>
 
-To run the dev server for your app, use:
+A modern, scalable multivendor e-commerce platform built using a Microservice Architecture in a monorepo. XYZ Shop powers seamless online shopping with robust vendor management, personalized product recommendations, and real-time user tracking.
 
-```sh
-npx nx serve auth_service
+## <a name="tech-stack">⚙️ Tech Stack</a>
+
+  <div>
+  <img src="https://img.shields.io/badge/-express-black?style=for-the-badge&logoColor=white&logo=express&color=000000" alt="Express JS" />
+  <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="Next JS" />
+  <img src="https://img.shields.io/badge/-NX_monorepo-black?style=for-the-badge&logoColor=white&logo=nx&color=143055" alt="NX Monorepo" />
+  <img src="https://img.shields.io/badge/-PostgreSQL-black?style=for-the-badge&logoColor=white&logo=postgresql&color=4169E1" alt="PostgrSQL" />
+  <img src="https://img.shields.io/badge/-Redis-black?style=for-the-badge&logoColor=white&logo=redis&color=FF4438" alt="Redis" />
+  <img src="https://img.shields.io/badge/-Prisma-black?style=for-the-badge&logoColor=white&logo=prisma&color=2D3748" alt="Prisma" />
+  <img src="https://img.shields.io/badge/-Apache_Kafka-black?style=for-the-badge&logoColor=white&logo=apachekafka&color=231F20" alt="Apache Kafka" />
+  <img src="https://img.shields.io/badge/-Tensorflow-black?style=for-the-badge&logoColor=white&logo=tensorflow&color=FF6F00" alt="Tensorflow" />
+  <img src="https://img.shields.io/badge/-Docker-black?style=for-the-badge&logoColor=white&logo=docker&color=2496ED" alt="Docker" />
+  <img src="https://img.shields.io/badge/-Kubernetes-black?style=for-the-badge&logoColor=white&logo=kubernetes&color=326CE5" alt="Kubernetes" />
+  <img src="https://img.shields.io/badge/-GitHub_Actions-black?style=for-the-badge&logoColor=white&logo=githubactions&color=2088FF" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/-Grafana-black?style=for-the-badge&logoColor=white&logo=grafana&color=F46800" alt="Grafana" />
+  <img src="https://img.shields.io/badge/-Teraform-black?style=for-the-badge&logoColor=white&logo=terraform&color=844FBA" alt="Terraform" />
+  <img src="https://img.shields.io/badge/-AWS-black?style=for-the-badge&logoColor=white&logo=amazonwebservices&color=232F3E" alt="AWS" />
+  </div> <br/>
+
+## <a name="feature">🔋 Feature</a>
+
+👉 🏬 Multivendor support with dedicated vendor dashboards
+👉 🤖 Personalized product recommendations powered by ML
+👉 📊 Real-time user activity tracking with Kafka
+👉 ⚙️ Scalable and maintainable microservices
+👉 🚀 Fast, SEO-friendly frontend with Next.js
+👉 🔒 Secure and efficient data management with PostgreSQL and Redis
+
+## <a name="quick-start">🤸 Quick Start</a>
+
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites 📋**
+
+You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [NPM](http://npmjs.com)) installed on your computer.
+
+```
+node@v20.17.0 or higher
+npm@9.9.3 or higher
+git@2.46.0 or higher
 ```
 
-To create a production bundle:
+---
 
-```sh
-npx nx build auth_service
+**Cloning the Repository**
+
+From your command line, first clone Simplefolio:
+
+<!-- # Clone the repository -->
+
+```bash
+# Clone the repository
+$ git clone https://github.com/ShahJabir/xyz_shop
 ```
 
-To see all available targets to run for a project, run:
+<!-- # Move into the repository -->
 
-```sh
-npx nx show project auth_service
-```
-        
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
-
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Add new projects
-
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
-
-Use the plugin's generator to create new projects.
-
-To generate a new application, use:
-
-```sh
-npx nx g @nx/node:app demo
+```bash
+# Move into the repository
+$ cd xyz_shop
 ```
 
-To generate a new library, use:
+**Installation and Running the Project**
 
-```sh
-npx nx g @nx/node:lib mylib
+<!-- # Remove the current origin repository -->
+
+```bash
+# Remove the current origin repository
+$ git remote remove origin
 ```
 
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
+After that, you can install the dependencies either using NPM .
 
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+Using NPM: Simply run the below commands.
 
+```bash
+# Fix Dependencies
+$ npm audit --fix
+```
 
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+```bash
+# Install dependencies
+$ npm install
+```
 
-## Install Nx Console
+```bash
+# Start the development server
+$ npm run dev
+```
 
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
+Once your server has started, go to this url `http://localhost:{PORT}/` to see the portfolio locally.
 
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+## <a name="authors"> Author </a>
 
-## Useful links
+<p align="center">
+<a href="https://shahjabir.com.bd">
+<img src="https://img.shields.io/badge/Website-ShahJabir-black" alt="Facebook" /></a>
+<a href="https://github.com/ShahJabir">
+<img src="https://img.shields.io/badge/Github-ShahJabir-white" alt="Facebook" /></a>
+<a href="https://www.facebook.com/shah.jabir.90">
+<img src="https://img.shields.io/badge/Facebook-ShahJabir-blue" alt="Facebook" /></a>
+<a href="https://x.com/TaqiJabir">
+<img src="https://img.shields.io/badge/X-TaqiJabir-black" alt="Twitter" />
+<a href="https://www.linkedin.com/in/shah-jabir-taqi-a63653211/">
+<img src="https://img.shields.io/badge/Linkedin-shahjabirtaqi-blue" alt="Linkedin" /></a>
+</a>
+</p>
 
-Learn more:
+## <a name="license">License 📄</a>
 
-- [Learn more about this workspace setup](https://nx.dev/nx-api/node?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ShahJabir/xyz_shop/blob/main/LICENSE) file for details
